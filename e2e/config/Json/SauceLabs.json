@@ -1,0 +1,18 @@
+{
+  "sauceUser": {
+    "key"     : "SAUCE_USERNAME",
+    "default" : "<SAUCE_USERNAME>"
+  },
+  "sauceKey": {
+    "key"     : "SAUCE_ACCESS_KEY",
+    "default" : "<SAUCE_ACCESS_KEY>"
+  },
+  "sauceJob": {
+    "key"     : "SAUCE_JOB",
+    "default" : "<SAUCE_JOB>"
+  },
+  "sauceBuild": {
+    "key"     : "SAUCE_BUILD",
+    "default" : "<SAUCE_BUILD>"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "LOCAL_HOST": {
+    "baseUrls": {
+      "GitHub": "https://github.com/",
+      "Google": "https://google.com/"
+    }
+  },
+  "DEV": {
+    "baseUrls": {
+      "GitHub": "https://github.com/",
+      "Google": "https://google.com/"
+    }
+  }
+}

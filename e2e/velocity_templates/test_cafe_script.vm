@@ -1,0 +1,11 @@
+import afterTestScenario from './AfterTestScenario';
+import testControllerHolder from './ControllerHolder';
+
+fixture('CucumberRunner');
+
+#foreach($i in [1..$testScenarios])
+
+    test('CucumberTestScenario#$i', testControllerHolder.capture.bind(testControllerHolder))
+      .after(t => afterTestScenario.handlePostTestScenario.bind(afterTestScenario)(t));
+
+#end

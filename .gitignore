@@ -1,0 +1,15 @@
+# Dependency directory
+node_modules
+
+# Screenshots
+reports/screenshots
+
+# Added empty reports folder
+reports/*
+!reports/.gitkeep
+
+#VSCode files
+.vscode/*
+
+#Linter
+.eslintrc.json

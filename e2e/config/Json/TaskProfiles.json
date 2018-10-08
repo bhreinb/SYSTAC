@@ -1,0 +1,156 @@
+{
+
+  "// 0)": "This Will Run The Tests On Chrome Browser & Tests Tagged With @auto_regression & @chrome",
+  "auto-regression-chrome": {
+    "browser": "chrome",
+    "tags": [
+              "@auto_regression",
+              "and @chrome"
+            ]
+  },
+
+  "// 1)": "This Will Run The Tests On Firefox Browser & Tests Tagged With @auto_regression & @firefox",
+  "auto-regression-firefox": {
+    "browser": "firefox",
+    "tags": [
+              "@auto_regression",
+              "and @firefox"
+            ]
+  },
+
+  "// 2)": "This Will Run The Tests On Safari Browser & Tests Tagged With @auto_regression & @safari",
+  "auto-regression-safari": {
+    "browser": "safari",
+    "tags": [
+              "@auto_regression",
+              "and @safari"
+            ]
+  },
+
+  "// 3)": "This Will Run The Tests On Opera Browser & Tests Tagged With @auto_regression & @opera",
+  "auto-regression-opera": {
+    "browser": "opera",
+    "tags": [
+              "@auto_regression",
+              "and @opera"
+    ]
+  },
+
+  "// 4)": "This Will Run The Tests On Ie Browser & Tests Tagged With @auto_regression & @ie",
+  "auto-regression-ie": {
+    "browser": "ie",
+    "tags": [
+              "@auto_regression",
+              "and @ie"
+    ]
+  },
+
+  "// 5)": "This Will Run The Tests On Edge Browser & Tests Tagged With @auto_regression & @edge",
+  "auto-regression-edge": {
+    "browser": "edge",
+    "tags": [
+              "@auto_regression",
+              "and @edge"
+    ]
+  },
+
+  "// 6)": "This Will Run The Tests On Chrome Browser Headless & Tests Tagged With @auto_regression & @chromeHeadless",
+  "auto-regression-chrome-headless": {
+    "browser": "chrome:headless",
+    "tags": [
+              "@auto_regression",
+              "and @chromeHeadless"
+    ]
+  },
+
+  "// 7)": "This Will Run The Tests On Firefox Browser Headless & Tests Tagged With @auto_regression & @firefoxHeadless",
+  "auto-regression-firefox-headless": {
+    "browser": "firefox:headless",
+    "tags": [
+              "@auto_regression",
+              "and @firefoxHeadless"
+    ]
+  },
+
+  "// 8)": "This Will Run The Tests On Chromium Browser Headless & Tests Tagged With @auto_regression & @chromeHeadless",
+  "auto-regression-chromium": {
+    "browser": "chromium --no-sandbox",
+    "tags": [
+      "@auto_regression",
+      "and @chromeHeadless"
+    ]
+  },
+
+  "// 9)": "This Will Run The Tests On Chrome Browser & Tests Tagged With @auto_regression & @chrome on SauceLabs",
+  "auto-regression-chrome-sauce-labs": {
+    "browser": "saucelabs:chrome",
+    "tags": [
+      "@auto_regression",
+      "and @chrome"
+    ]
+  },
+
+  "// 10)": "This Will Run The Tests On Firefox Browser & Tests Tagged With @auto_regression & @firefox on SauceLabs",
+  "auto-regression-firefox-sauce-labs": {
+    "browser": "saucelabs:firefox",
+    "tags": [
+      "@auto_regression",
+      "and @firefox"
+    ]
+  },
+
+  "// 11)": "This Will Run The Tests On Ie Browser & Tests Tagged With @auto_regression & @ie on SauceLabs",
+  "auto-regression-ie-sauce-labs": {
+    "browser": "saucelabs:ie",
+    "tags": [
+      "@auto_regression",
+      "and @ie"
+    ]
+  },
+
+  "// 12)": "This Will Run The Tests On Edge Browser & Tests Tagged With @auto_regression & @ie on SauceLabs",
+  "auto-regression-edge-sauce-labs": {
+    "browser": "saucelabs:MicrosoftEdge",
+    "tags": [
+      "@auto_regression",
+      "and @edge"
+    ]
+  },
+
+  "// 13)": "This Will Run The Tests On Samsung Galaxy S9 Emulator Device & Tests Tagged With @auto_regression & @samsung on SauceLabs",
+  "auto-regression-samsung-sauce-labs": {
+    "browser": "saucelabs:Samsung Galaxy S9 Plus WQHD GoogleAPI Emulator@7.1",
+    "tags": [
+      "@auto_regression",
+      "and @samsung"
+    ]
+  },
+
+  "// 14)": "This Will Run The Tests On Android Emulator Tablet & Tests Tagged With @auto_regression & @android on SauceLabs",
+  "auto-regression-android-sauce-labs": {
+    "browser": "saucelabs:saucelabs:Android Emulator Tablet@6.0",
+    "tags": [
+      "@auto_regression",
+      "and @android"
+    ]
+  },
+
+  "// 15)": "This Will Run The Tests On iPad Simulator & Tests Tagged With @auto_regression & @ipad on SauceLabs",
+  "auto-regression-ipad-sauce-labs": {
+    "browser": "iPad Simulator@11.3",
+    "tags": [
+      "@auto_regression",
+      "and @ipad"
+    ]
+  },
+
+  "// 16)": "This Will Run The Tests On iPhone Simulator & Tests Tagged With @auto_regression & @iphone on SauceLabs",
+  "auto-regression-iphone-sauce-labs": {
+    "browser": "saucelabs:iPhone X Simulator@11.3",
+    "tags": [
+      "@auto_regression",
+      "and @iphone"
+    ]
+  }
+
+}

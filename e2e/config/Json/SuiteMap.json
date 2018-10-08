@@ -1,0 +1,9 @@
+{
+
+  "all":            "./e2e/gherkin/**/*.feature",
+
+  "github":         "./e2e/gherkin/github.feature",
+
+  "google":         "./e2e/gherkin/google.feature"
+
+}

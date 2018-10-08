@@ -1,0 +1,26 @@
+// Use this file as a starting point for your project's .eslintrc.
+// Copy this file, and add rule overrides as needed.
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "settings": {
+    "polyfills": ["fetch", "promises"]
+  },
+  "plugins": ["compat", "emotion"],
+  "rules": {
+    "no-bitwise": ["error", { "int32Hint": true }],
+    "no-console": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "compat/compat": "error",
+    "emotion/syntax-preference": [2, "object"],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/no-named-as-default": "off",
+    "react/forbid-prop-types": "off",
+    "react/no-array-index-key":"off",
+    "react/no-did-mount-set-state": "off"
+  }
+}
