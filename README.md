@@ -33,9 +33,9 @@ Special thanks to [helen-dikareva](https://github.com/helen-dikareva/) & [rquell
 ```
 "scripts":
 {
-    "e2e-test": "./node_modules/babel-cli/bin/babel-node.js ./node_modules/cucumber/bin/cucumber-js",
-    "e2e-test-parallel": "cross-env NUM_PARALLEL_Threads=$npm_package_config_num_parallel_threads ./node_modules/babel-cli/bin/babel-node.js ./node_modules/cucumber/bin/cucumber-js",
-    "generate-docs": "./node_modules/babel-cli/bin/babel-node.js ./node_modules/.bin/jsdoc -c ./e2e/config/Json/JsDoc.json"
+    "e2e-test": "node ./node_modules/cucumber/bin/cucumber-js && node e2e/utilities/CleanupTagsInJsonReport",
+    "e2e-test-parallel": "cross-env NUM_PARALLEL_Threads=$npm_package_config_num_parallel_threads node ./node_modules/cucumber/bin/cucumber-js && node e2e/utilities/CleanupTagsInJsonReport",
+    "generate-docs": "node ./node_modules/.bin/jsdoc -c ./e2e/config/Json/JsDoc.json"
 }
 ```
 1) **e2e-test** -> Run tests on a single browser/device instance on the main thread via `npm run e2e-test`
