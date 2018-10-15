@@ -1,6 +1,6 @@
 {
   "name": "SYSTAC",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SYstem teSting with Testcafe And Cucumber",
   "author": "Bhréin Brannick",
   "license": "MIT",
@@ -27,12 +27,13 @@
     "targeted-test-environment": "LOCAL_HOST",
     "cucumber-before-after-all-timeout": "180",
     "cucumber-step-timeout": "30",
-    "output-directory": "./reports/"
+    "output-directory": "./reports/",
+    "winston-log-level": "silly"
   },
   "scripts": {
-    "e2e-test": "node ./node_modules/cucumber/bin/cucumber-js",
-    "e2e-test-parallel": "cross-env NUM_PARALLEL_Threads=$npm_package_config_num_parallel_threads node ./node_modules/cucumber/bin/cucumber-js",
-    "generate-docs": "./node_modules/babel-cli/bin/babel-node.js ./node_modules/.bin/jsdoc -c ./e2e/config/Json/JsDoc.json"
+    "e2e-test": "node ./node_modules/cucumber/bin/cucumber-js && node e2e/utilities/CleanupTagsInJsonReport",
+    "e2e-test-parallel": "cross-env NUM_PARALLEL_Threads=$npm_package_config_num_parallel_threads node ./node_modules/cucumber/bin/cucumber-js && node e2e/utilities/CleanupTagsInJsonReport",
+    "generate-docs": "node ./node_modules/.bin/jsdoc -c ./e2e/config/Json/JsDoc.json"
   },
   "dependencies": {
     "babel-eslint": "7.2.3",

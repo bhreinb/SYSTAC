@@ -7,7 +7,7 @@ cucumberProfileBuilder.init();
 cucumberProfileBuilder.checkIfParallelJob();
 cucumberProfileBuilder.setTheTagsForTheTestExecution();
 cucumberProfileBuilder.setTheJsonOutputFile();
-logger.info(`Sending The Following Cli '${cucumberProfileBuilder.createDefaultProfileForTestRun().default}' To Cucumber Runner`);
+logger.debug(`Sending The Following Cli '${cucumberProfileBuilder.createDefaultProfileForTestRun().default}' To Cucumber Runner`);
 
 const runnerMetaData = new RunnerMetaData();
 runnerMetaData.writeObjectAsPropertiesFiles(runnerMetaData.runnerMetaDataFilePathOutput);
