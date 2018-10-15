@@ -71,7 +71,8 @@ Below I detail the intention of some of the files & folders within the framework
     "targeted-test-environment": "LOCAL_HOST",
     "cucumber-before-after-all-timeout": "180",
     "cucumber-step-timeout": "30",
-    "output-directory": "./reports/"
+    "output-directory": "./reports/",
+    "winston-log-level": "silly"
 }
 ```
 Within the package.json file we have the following configuration keys. Details of each configuration key follow
